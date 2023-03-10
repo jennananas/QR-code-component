@@ -1,0 +1,55 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(212, 45%, 89%);
+    font-family: "Outfit";
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color:hsl(220, 15%, 55%);
+}
+
+.component {
+    display: grid;
+    grid-template-rows: max-content 2fr 1fr;
+    padding : 2rem;
+    border-radius: 25px;
+    width: 25vw;
+    background-color: hsl(0, 0%, 100%);
+    justify-items: center;
+    text-align: center;
+
+}
+
+img {
+    object-fit: cover;
+    border-radius: 2.5rem;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    color : hsl(218, 44%, 22%);
+    font-size : 3rem;
+}
+
+@media screen and (max-width:375px) {
+    .component  {
+        width: max-content;
+        margin: 2rem;
+    }
+    h1 {
+        font-size: 2.8rem;
+    }
+    body{
+        font-size: 1.6rem;
+    }
+}
